@@ -45,7 +45,7 @@ function Home(props) {
   useEffect(() => {
     const APIResultsLoading = async () => {
       setIsLoading(true);
-      const data = await fetch("https://portfolio-backend-rho.vercel.app/projectData");
+      const data = await fetch("https://portfolio-backend-74kj.vercel.app/projectData");
       const body = await data.json();
       setprojectsList(body.projectsData);
       const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
