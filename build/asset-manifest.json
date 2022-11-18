@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.57427dab.css",
+    "main.css": "/static/css/main.a90053ce.css",
     "main.js": "/static/js/main.d73823b8.js",
     "static/js/787.8129ff48.chunk.js": "/static/js/787.8129ff48.chunk.js",
     "static/media/cv-clement-guillot.pdf": "/static/media/cv-clement-guillot.0ba338acb57af0cfa252.pdf",
     "static/media/welcomeScreenImage.png": "/static/media/welcomeScreenImage.c00d70bb7c599f7cd88d.png",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.57427dab.css.map": "/static/css/main.57427dab.css.map",
+    "main.a90053ce.css.map": "/static/css/main.a90053ce.css.map",
     "main.d73823b8.js.map": "/static/js/main.d73823b8.js.map",
     "787.8129ff48.chunk.js.map": "/static/js/787.8129ff48.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.57427dab.css",
+    "static/css/main.a90053ce.css",
     "static/js/main.d73823b8.js"
   ]
 }
