@@ -11,6 +11,7 @@ import Loader from "../components/Loader";
 import Buttontertiary from "../components/Buttontertiary";
 import { useRef, useState, useEffect } from "react";
 import { motion, Variants, useInView } from "framer-motion";
+import { FaLinkedinIn, FaMediumM } from "react-icons/fa";
 
 function Home(props) {
   const projectSection = useRef(null);
@@ -45,14 +46,16 @@ function Home(props) {
   useEffect(() => {
     const APIResultsLoading = async () => {
       setIsLoading(true);
-      const data = await fetch("https://portfolio-backend-74kj.vercel.app/projectData");
+      const data = await fetch(
+        "https://portfolio-backend-74kj.vercel.app/projectData"
+      );
       const body = await data.json();
       setprojectsList(body.projectsData);
       const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
       await delay(4000);
       setIsLoading(false);
     };
-    APIResultsLoading(); 
+    APIResultsLoading();
   }, []);
 
   // console.log(projectsList[0],'projectsList');
@@ -136,27 +139,26 @@ function Home(props) {
             <text className="body textColorG1">
               Je m’appelle Clément, au cours des 8 dernières années, j'ai
               contribué à la création de produits physiques et digitaux. Mes
-              experiences passées m’ont amené à travailler sur les
-              outils d’acheminement des colis de La Poste, à la création de
-              parcours utilisateurs pour des conseillers en assurance ou encore
-              la spécification de nouveaux composants pour le design système NEO
-              de BPCE.
+              experiences passées m’ont amené à travailler sur les outils
+              d’acheminement des colis de La Poste, à la création de parcours
+              utilisateurs pour des conseillers en assurance ou encore la
+              spécification de nouveaux composants pour le design système NEO de
+              BPCE.
             </text>
             <text className="body textColorG1">
               Pour chacune d’elles, mon rôle de Product Designer m’a impliqué
               sur toute la chaîne de création du produit : de l’identification
               du problème à l’implémentation de la solution. J’ai la certitude
-              qu’un bon produit voit le jour grâce à une bonne
-              conception mais aussi par notre capacité à prendre du
-              recul et à se poser des questions durant toute la durée de vie de
-              conception du produit. Ainsi l’un de mes rôles a été de mettre en
-              place certains ateliers ou design sprints à des moments clés ou
-              bloquant du process de création. Je considère que mon travail
-              consiste tout autant à créer qu’à collaborer avec les différentes
-              parties prenantes, à présenter, à défendre des idées, à challenger
-              les opinions ou encore prendre des décisions sans renier ma
-              conviction que l’utilisateur doit être au coeur du processus de
-              conception.
+              qu’un bon produit voit le jour grâce à une bonne conception mais
+              aussi par notre capacité à prendre du recul et à se poser des
+              questions durant toute la durée de vie de conception du produit.
+              Ainsi l’un de mes rôles a été de mettre en place certains ateliers
+              ou design sprints à des moments clés ou bloquant du process de
+              création. Je considère que mon travail consiste tout autant à
+              créer qu’à collaborer avec les différentes parties prenantes, à
+              présenter, à défendre des idées, à challenger les opinions ou
+              encore prendre des décisions sans renier ma conviction que
+              l’utilisateur doit être au coeur du processus de conception.
             </text>
             <text className="body textColorG1">
               Aujourd’hui ma curiosité et ma soif de connaissance me poussent à
@@ -170,11 +172,37 @@ function Home(props) {
               Si vous êtes intéressés par mon profil je vous invite à consulter
               mon CV ou à me contacter directement :
             </text>
-            <a href="mailto:clement.guillot.dsgn@gmail.com" target="_blank" className="btn-meconctacter">
-              <Buttontertiary label="Me contacter" className="btn-meconctacter" />
+            <div className="container-btn-aboutme">
+              <a
+                href="mailto:clement.guillot.dsgn@gmail.com"
+                target="_blank"
+                className="btn-meconctacter"
+              >
+                <Buttontertiary
+                  label="Me contacter"
+                  className="btn-meconctacter"
+                />
+              </a>
+              <a
+              href={require("../assets/cv-clement-guillot.pdf")} target="_blank"
+                className="btn-meconctacter"
+              >
+                <Buttontertiary
+                  label="Voir mon CV →"
+                  className="btn-meconctacter"
+                />
+              </a>
+            </div>
+          </div>
+          <div className="footer">
+            <a
+              href="https://www.linkedin.com/in/cl%C3%A9ment-guillot/"
+              target="_blank"
+            >
+              <FaLinkedinIn className="icon textColorPrimary" />
             </a>
-            <a href="mailto:clement.guillot.dsgn@gmail.com" target="_blank" className="btn-meconctacter">
-              <Buttontertiary label="Voir mon CV →" className="btn-meconctacter" />
+            <a href="https://medium.com/@clement.guillot.dsgn" target="_blank">
+              <FaMediumM className="icon textColorPrimary" />
             </a>
           </div>
         </div>

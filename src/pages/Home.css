@@ -90,6 +90,17 @@ html {
     text-decoration:none;
 }
 
+.footer{
+    display: none;
+}
+
+.container-btn-aboutme {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+
+}
+
 @media screen and (max-width: 1200px) {
     html{
         cursor:auto;
@@ -114,6 +125,20 @@ html {
     }
     .mainContainer{
         gap: 0px;
+
+    }
+
+    .footer{
+        margin-top: 40px;
+        z-index: 10;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap : 24px;
+        height: auto;
+    }
+
+    a{
 
     }
   }
