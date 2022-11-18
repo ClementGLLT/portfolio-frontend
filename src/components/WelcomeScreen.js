@@ -9,7 +9,7 @@ import { useRef } from "react";
 
 function WelcomeScreen(props) {
   const animation = useRef(null);
-  const isInView = useInView(animation);
+  const isInView = useInView(animation, { once: true });
 
   return (
     <div className="welcomeScreenMainContainer" ref={animation}>

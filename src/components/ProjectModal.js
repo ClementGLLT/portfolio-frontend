@@ -30,13 +30,13 @@ function ProjectModal({
   const animationSection3 = useRef(null);
   const animationGallery = useRef(null);
 
-  const isInViewOpenWindow = useInView(animationOpenWindow);
+  const isInViewOpenWindow = useInView(animationOpenWindow, { once: true });
 
-  const isInViewWelcomeSection = useInView(animationWelcomeSection);
-  const isInViewSection1 = useInView(animationSection1);
-  const isInViewSection2 = useInView(animationSection2);
-  const isInViewSection3 = useInView(animationSection3);
-  const isInViewGallery = useInView(animationGallery);
+  const isInViewWelcomeSection = useInView(animationWelcomeSection, { once: true });
+  const isInViewSection1 = useInView(animationSection1, { once: true });
+  const isInViewSection2 = useInView(animationSection2, { once: true }, { once: true });
+  const isInViewSection3 = useInView(animationSection3, { once: true });
+  const isInViewGallery = useInView(animationGallery, { once: true });
 
   const welcomeImg = infoModal.urlWelcomeModal;
   const section1Img = infoModal.urlSection1;

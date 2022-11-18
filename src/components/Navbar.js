@@ -16,7 +16,7 @@ function Navbar({
   notHover /* handleClickExperienceSection, handleClickAboutMeSection */,
 }) {
   const animation = useRef(null);
-  const isInView = useInView(animation);
+  const isInView = useInView(animation, { once: true });
   return (
     <div
       className="mainContainerNav"

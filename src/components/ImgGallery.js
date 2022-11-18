@@ -6,7 +6,7 @@ import { useInView } from "framer-motion";
 
 function ImgGallery(props) {
   const animation = useRef(null);
-  const isInView = useInView(animation);
+  const isInView = useInView(animation, { once: true });
   
 
   console.log("props.img",props.url);

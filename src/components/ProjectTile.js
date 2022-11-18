@@ -10,7 +10,7 @@ import {useInView} from 'framer-motion';
 function ProjectTile(props) {
 
     const animation = useRef(null);
-    const isInView = useInView(animation);
+    const isInView = useInView(animation, { once: true });
 
     var tagList = [];
   // eslint-disable-next-line array-callback-return
