@@ -7,6 +7,7 @@ import { useInView } from "framer-motion";
 function ExperienceSection(props) {
   const animation = useRef(null);
   const isInView = useInView(animation, { once: true });
+  const [display, setDisplay] = useState("displayNone");
 
   const expInfo = [
     {
@@ -76,11 +77,13 @@ function ExperienceSection(props) {
 
   function onMouseEnter(position) {
     setInfoExp(position);
+    setDisplay("displayOn")
     return infoExp;
   }
 
   function onClick(position) {
     setInfoExp(position);
+    setDisplay("displayOn");
     return infoExp;
   }
 
@@ -144,7 +147,7 @@ function ExperienceSection(props) {
           {expInfo[7].name}
         </text>
       </div>
-      <div className="hider">
+      <div className={display}>
         <div className="tableDetailsContainer">
           <div className="titleContainer">
             <text className="h3">{infoExp.name}</text>

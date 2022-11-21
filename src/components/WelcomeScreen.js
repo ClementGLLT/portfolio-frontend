@@ -67,7 +67,7 @@ function WelcomeScreen(props) {
         >
           Entre créativité et conception, je suis passionné par la
           création d’un produit à toutes ses étapes de fabrication. En tant
-          que développeur front-end, j'aime m’attarder sur la conception de
+          que développeur front-end, j'aime construire des
           solutions pragmatiques, correspondant aux besoins des utilisateurs et
           répondant à la vision métier et business du client.
         </div>

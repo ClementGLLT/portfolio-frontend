@@ -162,11 +162,10 @@ function Home(props) {
             </text>
             <text className="body textColorG1">
               Aujourd’hui ma curiosité et ma soif de connaissance me poussent à
-              m’immerger d’avantage au coeur de la conception technique du
+              m’immerger davantage au coeur de la conception technique du
               produit. je cherche à approfondir mes connaissances en
-              développement en travaillant en tant que développeur front-end et
-              être capable à terme de concevoir rien qui ne puisse être
-              techniquement créé.
+              développement en travaillant en tant que développeur front-end pour
+              être capable à terme d'imaginer seulement des expériences techniquement faisable.
             </text>
             <text className="body textColorG1">
               Si vous êtes intéressés par mon profil je vous invite à consulter

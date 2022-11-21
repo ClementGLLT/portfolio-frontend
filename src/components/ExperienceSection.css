@@ -16,9 +16,17 @@
   gap: 0px;
 }
 
-.hider {
+.displayNone{
+  display: flex;
   width: 580px;
   opacity: 0;
+  transition: all 0.8s cubic-bezier(0.38, 0, 0, 1);
+}
+
+.displayOn{
+  display: flex;
+  width: 580px;
+  opacity: 1;
   transition: all 0.8s cubic-bezier(0.38, 0, 0, 1);
 }
 
@@ -145,6 +153,20 @@
     max-width: 600px;
     width: 100%;
     opacity: 1;
+  }
+
+  .displayNone{
+    display: none;
+    max-width: 580px;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.38, 0, 0, 1);
+  }
+  
+  .displayOn{
+    display: auto;
+    max-width: 100%;
+    opacity: 1;
+    transition: all 0.8s cubic-bezier(0.38, 0, 0, 1);
   }
   .subSectionWrapper {
     display: flex;
