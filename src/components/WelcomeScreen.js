@@ -65,9 +65,9 @@ function WelcomeScreen(props) {
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
         >
-          Entre créativité et conception, je suis passionné par la
-          création d’un produit à toutes ses étapes de fabrication. En tant
-          que développeur front-end, j'aime construire des
+          Entre design et conception technique, je suis passionné par la
+          création d’un produit et chaque étape du développement. En tant
+          que développeur front-end, je souhaite construire des
           solutions pragmatiques, correspondant aux besoins des utilisateurs et
           répondant à la vision métier et business du client.
         </div>
