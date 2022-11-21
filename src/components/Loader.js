@@ -26,7 +26,7 @@ const Loader = () => {
       <img className="box" src="https://res.cloudinary.com/dv4wgyeje/image/upload/v1667917364/Portfolio/hello_xuwgaj.svg" />
       <div className="typewriter">
         <p className="h1 textColorWhite textTitleLoader" textColorWhite> Hello </p>
-      <p className="h3 textColorWhite textDescriptionLoader">À la recherche d'un poste de développeur frontend ?</p>
+      <p className="h3 textColorWhite textDescriptionLoader">À la recherche d'un poste de développeur frontend</p>
       </div>
     </div>
   );
