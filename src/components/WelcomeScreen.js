@@ -33,7 +33,7 @@ function WelcomeScreen(props) {
             <div className="welcomeScreenBottomLeftContainer2">
               <div className="h3 textColorG1">PRODUCT</div>
               <div className="h3 textColorG1">DESIGNER</div>
-              <div className="h3 textColorG1">DÉVELOPEUR</div>
+              <div className="h3 textColorG1">DÉVELOPPEUR</div>
             </div>
 
             <div
