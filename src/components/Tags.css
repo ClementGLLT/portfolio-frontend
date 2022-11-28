@@ -1,6 +1,11 @@
-.tags {
+.sizeSm {
     background: #F2F2F2;
     border-radius: 4px;
-    text-transform: uppercase;
+    padding: 0px 8px;
+}
+
+.sizeMd {
+    background: #F2F2F2;
+    border-radius: 4px;
     padding: 0px 8px;
 }

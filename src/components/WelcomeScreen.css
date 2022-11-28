@@ -149,5 +149,8 @@
     .button {
         display: none;
     }
+    .welcomeScreenDivider {
+        display: none;
+    }
 }
   

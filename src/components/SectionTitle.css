@@ -3,7 +3,7 @@
     flex-direction: column;
     width: calc(100% - 240px);
     margin-top: 80px;
-    margin-bottom: 40px;
+    margin-bottom: 64px;
     gap: 8px;
     z-index: 2;
 }
@@ -21,7 +21,7 @@
 @media screen and (max-width: 1200px) {
     .sectionContainer {
         width: 100%;
-        margin-top: 24px;
+        margin-top: 56px;
         margin-bottom: 24px;
     }
     .sectionText{

@@ -12,6 +12,7 @@ function Navbar({
   projectSection,
   experienceSection,
   aboutMeSection,
+  skillsSection,
   hover,
   notHover /* handleClickExperienceSection, handleClickAboutMeSection */,
 }) {
@@ -60,6 +61,17 @@ function Navbar({
             <Buttontertiary
               label="Experiences"
               textOrientation="textOrientationVertical"
+            />
+          </button>
+          <button
+            className="button"
+            onClick={() => scrollToSection(skillsSection)}
+            onMouseEnter={hover}
+            onMouseLeave={notHover}
+          >
+            <Buttontertiary
+              label="Compétences"
+              textOrientation="textOrientationVertical" /* onClick={() => handleClickProjectSection()} */
             />
           </button>
           <button

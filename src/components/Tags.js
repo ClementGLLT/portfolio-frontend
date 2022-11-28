@@ -9,7 +9,7 @@ function Tags(props) {
 
 return (
         
-            <text className='tags annotation textColorG1' >{props.tag.name}</text>
+            <text className={`${props.size} ${props.textStyle} textColorG1`} >{props.tag}</text>
         
 )
 }

@@ -7,6 +7,7 @@ import SectionTitle from "../components/SectionTitle";
 import ProjectTile from "../components/ProjectTile";
 import ProjectModal from "../components/ProjectModal";
 import ExperienceSection from "../components/ExperienceSection";
+import SkillsSection from "../components/SkillsSection"
 import Loader from "../components/Loader";
 import Buttontertiary from "../components/Buttontertiary";
 import { useRef, useState, useEffect } from "react";
@@ -17,6 +18,7 @@ function Home(props) {
   const projectSection = useRef(null);
   const experienceSection = useRef(null);
   const aboutMeSection = useRef(null);
+  const skillsSection = useRef(null);
   const [projectsList, setprojectsList] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -90,6 +92,7 @@ function Home(props) {
         scrollToSection={scrollToSection}
         projectSection={projectSection}
         experienceSection={experienceSection}
+        skillsSection={skillsSection}
         aboutMeSection={aboutMeSection}
         hover={props.hover}
         notHover={props.notHover}
@@ -131,6 +134,16 @@ function Home(props) {
           >
             <SectionTitle title1="Quelques" title2="experiences" />
             <ExperienceSection />
+          </motion.div>
+          <motion.div
+            className="sections"
+            ref={skillsSection}
+            /* variants={animationInViewMD} */
+            initial="init"
+            animate="final"
+          >
+            <SectionTitle title1="LANGUAGES &" title2="OUTILS" />
+            <SkillsSection/>
           </motion.div>
           <div className="sections" ref={aboutMeSection}>
             <SectionTitle title1="Quelques mots" title2="à mon propos" />

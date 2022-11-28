@@ -17,7 +17,9 @@ function ProjectTile(props) {
   props.tile.tags.map((tag) => {
     tagList.push(
       <Tags
-        tag={tag}
+        tag={tag.name}
+        textStyle={"annotation"}
+        size={"sizeSm"}
       />
     );
   });
